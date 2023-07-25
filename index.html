@@ -27,6 +27,9 @@
         extend: {
           colors: {
            'primary-color': '#B68C5A'
+          },
+          backgroundImage: {
+            'bg-image': 'url("./images/banner.png")'
           }
         }
       }
@@ -49,7 +52,7 @@
    <!-- header section start here -->
    <header>
     <!-- navbar section -->
-    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5">
+    <section class="max-w-screen-xl mx-auto px-4 md:px-16 lg:px-24 py-5 my-10">
 
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -57,7 +60,7 @@
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base text-[#707070] shadow bg-base-100 rounded-box w-52">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base text-[#707070] font-poppins shadow bg-base-100 rounded-box w-52">
                   <li><a>Home</a></li>
                   <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
                   <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
@@ -65,10 +68,10 @@
                   <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost normal-case text-xl"><img src="./images/logo2.png" alt=""></a>
+              <a class="text-xl cursor-pointer"><img src="./images/logo2.png" alt="" class="w-20 md:w-30 lg:w-40"></a>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal text-[#707070] text-base px-1">
+              <ul class="menu menu-horizontal text-[#707070] text-base font-poppins px-1">
                 <li><a>Home</a></li>
                   <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
                   <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
@@ -78,12 +81,32 @@
             </div>
             
             <div class="navbar-end">
-              <a class="btn hover:text-black bg-primary-color text-white">Free Consultation</a>
+              <a class=" btn hover:text-black bg-primary-color text-xs font-extrabold font-poppins text-white">Free Consultation</a>
             </div>
           </div>
 
     </section>
     <!-- navbar section -->
+
+    <!-- banner section -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+     
+      <div class="hero min-h-[calc(100vh-110px)] bg-bg-image">
+        <div class="hero-overlay bg-opacity-40"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class=" max-w-md lg:max-w-xl">
+            <h1 class="mb-5 text-xl lg:text-5xl text-white font-bold font-eb-garmond">We Provide Effective <br>Legal Solutions</h1>
+            <p class="mb-5 text-[#E7E7E7] font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            
+            <div class="mt-10">
+              <input type="text" placeholder="Search your services" class="input input-bordered w-40 lg:w-full max-w-xs"/>
+            <button class="btn bg-primary-color border-none text-white font-semibold text-poppins">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section -->
    </header>
    <!-- header section end here -->
 
